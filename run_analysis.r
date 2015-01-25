@@ -2,11 +2,9 @@ runAnalysis <- function() {
 
 	# part 1: Merges the training and the test sets to create one data set.
 	
-	setwd("C:/Users/Linli/Documents/My courses/Getting and cleaning data/week 3/Project/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train")
 	subjecttrain <- read.table("subject_train.txt")
 	xtrain <- read.table("X_train.txt")
 	ytrain <- read.table("y_train.txt")
-	setwd("C:/Users/Linli/Documents/My courses/Getting and cleaning data/week 3/Project/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test")
 	subjecttest <- read.table("subject_test.txt")
 	xtest <- read.table("X_test.txt")
 	ytest <- read.table("y_test.txt")
@@ -18,7 +16,6 @@ runAnalysis <- function() {
 	## Part 4: Appropriately labels the data set with descriptive variable names.
 	## Variable names are from the "features.txt"
 	
-	setwd("C:/Users/Linli/Documents/My courses/Getting and cleaning data/week 3/Project/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
 	features<- read.table("features.txt")
 	listofCNames <- make.names(features[,2],unique=TRUE)
 	colnames(mdata) <- c("Subject", "Activity", listofCNames)
