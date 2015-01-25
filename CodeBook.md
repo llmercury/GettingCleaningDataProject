@@ -10,7 +10,7 @@ From the "features_info.txt" of the original data, the features selected for thi
 
 the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). All the parameters whose names contain "Mag" meaning magnitude of signals were calculated from measurement results. All the parameters starting with "f" are also calculations by Fast Fourier Transform (FFT) of the time domain signals.
 
-The measurements on the mean and standard deviation I extracted on step 2 have 18 variables:
+Therefore, the measurements on the mean and standard deviation I extracted on step 2 have 18 variables:
 
 - tBodyAcc.mean...X
 - tBodyAcc.mean...Y
