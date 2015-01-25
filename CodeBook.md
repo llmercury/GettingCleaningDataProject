@@ -31,6 +31,8 @@ Therefore, the measurements on the mean and standard deviation I extracted on st
 - tBodyGyro.std...Y
 - tBodyGyro.std...Z
 
+If the variable names contain "mean", it means mean value. If the variable names contain "std", it means standard deviation. The last letters in the variable names mean the direction in space(X, Y, or Z direction in cartesian coordinates).
+
 The data set after step 4 includes those 18 variables as well as "Subject" and "Activity" as the 1st and 2nd columns.
 
 On step 5, A tidy data set was obtained by average each of those 18 variables for each activity and each subject. The names of the variables in the tidy data set were maintained.
